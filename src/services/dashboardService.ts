@@ -1,6 +1,7 @@
 import { retentionHistory, retentionTarget } from '../data/retentionData';
 import { businessInsights } from '../data/insightsData';
 import { kpiSummaries } from '../data/kpiData';
+import { clientEngagementService } from './clientEngagementService';
 import type { BusinessInsight, KpiSummary, RetentionHistory } from '../models';
 
 /**
@@ -22,5 +23,11 @@ export const dashboardService = {
   },
   getKpiSummaries(): KpiSummary[] {
     return kpiSummaries;
+  },
+  getClientEngagementSummary() {
+    const scores = clientEngagementService.getClientEngagementScores();
+    const averageScore = Math.round(scores.reduce((sum, item) => sum + item.score, 0) / scores.length);
+    const atRiskCount = scores.filter((item) => item.score < 60).length;
+    return { averageScore, atRiskCount };
   },
 };

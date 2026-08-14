@@ -30,3 +30,5 @@ export interface KpiSummary {
   /** Direction of the trend indicator. */
   trend: 'up' | 'down' | 'flat';
 }
+
+export type { Client, ClientStatus, ContactEvent, ContactEventType, EngagementScore } from './ClientEngagement';

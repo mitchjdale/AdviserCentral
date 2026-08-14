@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import AppLayout from '../layouts/AppLayout';
 import Dashboard from '../pages/Dashboard';
 import ComingSoonPage from '../pages/ComingSoonPage';
+import ClientEngagementPage from '../pages/ClientEngagementPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import { navItems } from '../data/navigation';
 
@@ -11,6 +12,7 @@ export default function AppRoutes() {
     <Routes>
       <Route path="/" element={<AppLayout />}>
         <Route index element={<Dashboard />} />
+        <Route path="/client-engagement" element={<ClientEngagementPage />} />
         {navItems
           .filter((item) => !item.implemented)
           .map((item) => (
