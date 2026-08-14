@@ -67,7 +67,7 @@ export const navItems: NavItem[] = [
     path: '/client-engagement',
     label: 'Client Engagement',
     icon: ForumRoundedIcon,
-    implemented: false,
+    implemented: true,
     title: 'Client Engagement',
     description:
       'Measure how actively your clients engage with your practice through meetings, reviews and communications, with contact heatmaps.',
