@@ -6,9 +6,10 @@ Adviser Central is a modern fintech dashboard that helps financial advisers meas
 improve the performance of their advice practice. It brings performance KPIs, year-on-year
 trend analysis and generated business insights into a single, polished analytics experience.
 
-**Version 1 is intentionally a foundation.** Only one KPI — **Client Retention** — is fully
-implemented. Every other capability is scaffolded as an attractive "Coming Soon" placeholder,
-ready to be delivered incrementally through future BA (Business Analyst) tickets.
+**Version 1 is intentionally a foundation.** Core analytics for **Client Retention** and
+**Referrals**, plus the **Client Engagement** page, are implemented. Remaining capabilities are
+scaffolded as attractive "Coming Soon" placeholders, ready to be delivered incrementally through
+future BA (Business Analyst) tickets.
 
 ---
 
@@ -122,8 +123,8 @@ which future tickets can swap for real API calls without touching the UI.
 - **Modern application shell** with a fixed left navigation menu and responsive top bar.
 - **Left navigation** with: Dashboard, Client Book Health, Adviser Score, Revenue Growth,
   Client Engagement, Referrals, Opportunity Finder, Revenue Forecasting, Adviser Benchmarking
-  and Settings. Every item except Dashboard is flagged **Coming Soon**.
-- **Dashboard page** (the only fully implemented page), including:
+  and Settings.
+- **Dashboard page**, including:
   - A header — *Adviser Central* / *Helping advisers track their success*.
   - A **Client Retention KPI card** — `97.2%`, with a green `+1.4% vs Previous Financial Year`
     trend indicator.
@@ -136,9 +137,9 @@ which future tickets can swap for real API calls without touching the UI.
 - **Professional theme** — blue primary, green success, clean cards, subtle shadows and a
   responsive layout throughout.
 
-> Only **Client Retention** is functional. Everything else is intentionally positioned as a
-> future enhancement with enough scaffolding and documentation to be implemented via new BA
-> tickets.
+> Implemented analytics include **Client Retention**, **Referrals**, and the **Client
+> Engagement** page. The rest are intentionally positioned as future enhancements with enough
+> scaffolding and documentation to be implemented via new BA tickets.
 
 ---
 

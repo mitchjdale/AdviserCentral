@@ -32,3 +32,4 @@ export interface KpiSummary {
 }
 
 export type { Client, ClientStatus, ContactEvent, ContactEventType, EngagementScore } from './ClientEngagement';
+export type { ReferralConversionHistory, ReferralInsight } from './Referral';

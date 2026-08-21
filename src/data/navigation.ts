@@ -76,7 +76,7 @@ export const navItems: NavItem[] = [
     path: '/referrals',
     label: 'Referrals',
     icon: Diversity3RoundedIcon,
-    implemented: false,
+    implemented: true,
     title: 'Referrals',
     description:
       'Understand where new business comes from with referral tracking, conversion rates and a referral network graph.',
